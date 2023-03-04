@@ -13,8 +13,8 @@
     <title>Reprograme-se</title>
 </head>
 
-<body class="font-[Poppins] bg-gradient-to-t from-[#C27FB1] to-[#1A7FBE] h-screen">
-    <header class="nav-bar bg-white">
+<body class="font-[Poppins] bg-gradient-to-r from-[#C27FB1] to-[#1A7FBE] h-full">
+    <header id="nav-bar" class="nav-bar bg-white">
         <nav class="flex justify-between items-center w-[92%]  mx-auto">
             <div>
                 <a href="hero-section"><img class="w-32 cursor-pointer" src="/assets/img/logo-reprogramese/preferencial-horizontal.png" alt="Logo Reprograme-se"></a>
@@ -23,13 +23,13 @@
                 class="nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
                 <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
                     <li>
-                        <a class="hover:text-gray-500" href="#">O Curso</a>
+                        <a class="hover:text-gray-500" href="#content">O Curso</a>
                     </li>
                     <li>
-                        <a class="hover:text-gray-500" href="#">Sobre Nós</a>
+                        <a class="hover:text-gray-500" href="#about-us">Sobre Nós</a>
                     </li>
                     <li>
-                        <a class="hover:text-gray-500" href="#">Depoimentos</a>
+                        <a class="hover:text-gray-500" href="#depoiments">Depoimentos</a>
                     </li>
                     <li>
                         <a class="hover:text-gray-500" href="#">Perguntas Frequentes</a>
@@ -50,7 +50,7 @@
                 <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
             </div>
     </header>
-    <section class="hero-section flex justify-center dark:bg-gray-900">
+    <section id="hero-section" class="flex justify-center dark:bg-gray-900">
         <div class="text-center grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
             <div class="lg:hidden lg:mt-0 lg:col-span-5">
                 <img src="/assets/img/img-hero-section.png" alt="Ilustração sobre programação">
@@ -65,14 +65,13 @@
                     Inscreva-se
                     <svg class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                 </a>
-                
             </div>
             <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
                 <img src="/assets/img/img-hero-section.png" alt="Ilustração sobre programação">
             </div>                
         </div>
     </section>
-    <section class="section-1 bg-white h-auto">
+    <section id="content" class="bg-white h-auto">
         <h1 class="pt-4 text-4xl text-center font-bold tracking-tight leading-none dark:text-white">O Curso</h1>
         <p class="text-center text-lg">O que você vai aprender no Reprograme-se:</p>
         <div class="lg:m-auto lg:grid lg:grid-cols-3 sm:grid-cols-2 sm:grid-rows-3 lg:grid-rows-2 lg:max-w-7xl">
@@ -107,15 +106,169 @@
                 <p class="mb-3 font-normal text-justify text-black dark:text-gray-400">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate est provident eaque error deleniti, facilis architecto fugit nulla possimus unde. Laudantium cum vitae ab! Modi deserunt officiis excepturi laborum quos?</p>
             </div>
         </div>
-        <div>
-            
+        <div class="flex justify-center">
+            <a target="_black" href="https://cachoeiro.ifes.edu.br/images/stories/2022/editais/252022/Estrutura_e_organizacao_do_reprograme-se.pdf" class="mb-10 inline-flex items-center justify-center px-24 py-3 text-base font-medium text-center text-gray-900 border border-[#C27FB1] rounded-lg hover:bg-gradient-to-tr from-[#C27FB1] to-[#1A7FBE] focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">Saiba Mais</a>
         </div>
     </section>
-    <section>
-
+    <section id="about-us">
+        <h1 class="py-8 text-4xl text-center font-bold tracking-tight leading-none dark:text-white">Sobre Nós</h1>
+        <div class="lg:flex lg:items-start">
+            <h1 class="lg:hidden hidden py-8 text-4xl text-center font-bold tracking-tight leading-none dark:text-white">Sobre Nós</h1>
+            <div class="m-auto max-w-sm min-w-xs lg:max-w-md lg:min-w-sm p-4 text-center dark:border-gray-700">
+                <div class="flex items-center justify-center h-auto bg-gray-300 rounded dark:bg-gray-700">
+                    <img src="/assets/img/logo-ifes/ifes-horizontal-cor.png" alt="">
+                </div>
+                <div>
+                    <h5 class="font-bold text-2xl my-3">O IFES</h5>
+                    <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium tenetur consequatur beatae, facilis asperiores perferendis similique sit, deleniti accusamus corrupti illum! Maiores ea iure ullam omnis voluptatem, tempore dignissimos deleniti?</p>
+                    <a class="underline" href="https://cachoeiro.ifes.edu.br/">Site Oficial</a>
+                </div>
+            </div>
+            <hr class="lg:hidden w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
+            <div class="m-auto max-w-sm min-w-xs lg:max-w-md lg:min-w-sm p-4 text-center dark:border-gray-700">
+                <div class="flex items-center justify-center h-auto bg-gray-300 rounded dark:bg-gray-700">
+                    <img src="/assets/img/logo-action/horizontal-cor.png" alt="">
+                </div>
+                <div>
+                    <h5 class="font-bold text-2xl my-3">A Action</h5>
+                    <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium tenetur consequatur beatae, facilis asperiores perferendis similique sit, deleniti accusamus corrupti illum! Maiores ea iure ullam omnis voluptatem, tempore dignissimos deleniti?</p>
+                    <a class="underline" href="https://action.org.es/">Site Oficial</a>
+                </div>
+            </div>
+        </div>
     </section>
-
-
+    <section id="depoiments" class="bg-white h-auto ">
+        <h1 class="pt-8 px-5 text-4xl text-center font-bold tracking-tight leading-none dark:text-white">Depoimentos de nossos ex-alunos</h1>             
+        <div class="py-10 px-5 lg:grid lg:grid-cols-2 lg:gap-10 lg:m-auto lg:max-w-screen-xl">
+            <figure class="max-w-screen-md mx-auto text-center">
+                <div class="lg:hidden inline-flex items-center justify-center w-full">
+                    <hr class="w-64 h-1 my-8 bg-gray-200 border-0 rounded dark:bg-gray-700">
+                    <div class="absolute px-4 -translate-x-1/2 bg-white left-1/2 dark:bg-gray-900">
+                        <svg aria-hidden="true" class="w-5 h-5 text-gray-700 dark:text-gray-300" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"/></svg>
+                    </div>
+                </div> 
+                <blockquote>
+                    <p class="text-lg italic font-medium text-gray-900 dark:text-white">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate minus quas harum laudantium magni officia, maxime libero quisquam minima aut!"</p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                    <img class="w-10 h-10 rounded-full" src="https://api.lorem.space/image/face?w=150&amp;amp;amp;amp;h=150" alt="profile picture">
+                    <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
+                        <cite class="pr-3 font-medium text-gray-900 dark:text-white">Fulano de Tal</cite>
+                        <cite class="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">Aluno da última turma</cite>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure class="max-w-screen-md mx-auto mt-10 text-center">
+                <div class="lg:hidden inline-flex items-center justify-center w-full">
+                    <hr class="w-64 h-1 my-8 bg-gray-200 border-0 rounded dark:bg-gray-700">
+                    <div class="absolute px-4 -translate-x-1/2 bg-white left-1/2 dark:bg-gray-900">
+                        <svg aria-hidden="true" class="w-5 h-5 text-gray-700 dark:text-gray-300" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"/></svg>
+                    </div>
+                </div> 
+                <blockquote>
+                    <p class="text-lg italic font-medium text-gray-900 dark:text-white">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate minus quas harum laudantium magni officia, maxime libero quisquam minima aut!"</p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                    <img class="w-10 h-10 rounded-full" src="https://api.lorem.space/image/face?w=150&amp;amp;amp;amp;h=150" alt="profile picture">
+                    <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
+                        <cite class="pr-3 font-medium text-gray-900 dark:text-white">Fulano de Tal</cite>
+                        <cite class="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">Aluno da última turma</cite>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure class="max-w-screen-md mx-auto mt-10 lg:mt-0 text-center">
+                <div class="lg:hidden inline-flex items-center justify-center w-full">
+                    <hr class="w-64 h-1 my-8 bg-gray-200 border-0 rounded dark:bg-gray-700">
+                    <div class="absolute px-4 -translate-x-1/2 bg-white left-1/2 dark:bg-gray-900">
+                        <svg aria-hidden="true" class="w-5 h-5 text-gray-700 dark:text-gray-300" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"/></svg>
+                    </div>
+                </div> 
+                <blockquote>
+                    <p class="text-lg italic font-medium text-gray-900 dark:text-white">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate minus quas harum laudantium magni officia, maxime libero quisquam minima aut!"</p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                    <img class="w-10 h-10 rounded-full" src="https://api.lorem.space/image/face?w=150&amp;amp;amp;amp;h=150" alt="profile picture">
+                    <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
+                        <cite class="pr-3 font-medium text-gray-900 dark:text-white">Fulano de Tal</cite>
+                        <cite class="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">Aluno da última turma</cite>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure class="max-w-screen-md mx-auto mt-10 text-center">
+                <div class="lg:hidden inline-flex items-center justify-center w-full">
+                    <hr class="w-64 h-1 my-8 bg-gray-200 border-0 rounded dark:bg-gray-700">
+                    <div class="absolute px-4 -translate-x-1/2 bg-white left-1/2 dark:bg-gray-900">
+                        <svg aria-hidden="true" class="w-5 h-5 text-gray-700 dark:text-gray-300" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"/></svg>
+                    </div>
+                </div> 
+                <blockquote>
+                    <p class="text-lg italic font-medium text-gray-900 dark:text-white">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate minus quas harum laudantium magni officia, maxime libero quisquam minima aut!"</p>
+                </blockquote>
+                <figcaption class="flex items-center justify-center space-x-3">
+                    <img class="w-10 h-10 rounded-full" src="https://api.lorem.space/image/face?w=150&amp;amp;amp;amp;h=150" alt="profile picture">
+                    <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
+                        <cite class="pr-3 font-medium text-gray-900 dark:text-white">Fulano de Tal</cite>
+                        <cite class="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">Aluno da última turma</cite>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+    <section id="talk-to-us">
+        <h1 class="pt-8 px-5 text-4xl text-center font-bold tracking-tight leading-none dark:text-white">Alguma dúvida, elogio, crítica ou sugestão?</h1>             
+        <h3 class="pt-2 px-5 text-2xl text-center tracking-tight leading-none dark:text-white">Fala com a gente!</h3>
+        <form action="mailto:thaelenml15@gmail.com" method="get" enctype="text/plain" class="max-w-sm mx-auto my-8 lg:max-w-xl">
+            <div>
+                <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                <option>Qual o motivo do seu contato?</option>
+                <option>Dúvida</option>
+                <option>Elogio</option>
+                <option>Crítica</option>
+                <option>Sugestão</option>
+                <option>Outro</option>
+                </select>
+            </div>
+            <div class="my-5">
+                <label for="email-address-icon" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Qual é o seu Email?</label>
+                <div class="relative">
+                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                    <svg aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                </div>
+                <input type="text" id="email-address-icon" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="fulanodetal@email.com">
+                </div>
+            </div>
+            <div>
+                <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Agora sua mensagem</label>
+                <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Digite aqui..."></textarea>  
+            </div>
+            <div>
+                <input type="submit" name="submit" value="Send" />
+                <input type="reset" name="reset" value="Clear Form" />
+            </div>
+        </form>
+    </section>
+    <section id="cta" class="bg-white h-auto">
+        <div class="text-center py-8">
+            <h1 class="pt-8 px-5 text-4xl text-center font-bold tracking-tight leading-none dark:text-white">Nós acreditamos no seu potencial</h1>             
+            <p class="mb-6 text-2xl font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">E você?</p>
+            <div class="flex justify-center">
+                <a target="_black" href="https://cachoeiro.ifes.edu.br/images/stories/2022/editais/252022/Estrutura_e_organizacao_do_reprograme-se.pdf" class="mb-10 inline-flex items-center justify-center px-24 py-3 text-base font-medium text-center text-gray-900 border border-[#C27FB1] rounded-lg bg-gradient-to-tr from-[#C27FB1] to-[#1A7FBE] focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">Inscreva-se</a>
+            </div>
+        </div>
+    </section>  
+    <footer class="p-4 rounded-lg shadow lg:flex lg:items-center lg:justify-between md:p-6 dark:bg-gray-800">
+        <span class="text-sm text-black sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">Reprograme-se™</a>. All Rights Reserved.
+        </span>
+        <ul class="flex flex-wrap items-center mt-3 text-sm text-black dark:text-gray-400 sm:mt-0">
+            <li>
+                <a href="#nav-bar" class="mr-4 hover:underline md:mr-6 ">Voltar ao topo</a>
+            </li>
+            <li>
+                <a href="https://instagram.com/ifescachoeiro.oficial?igshid=NTdlMDg3MTY=" target="_blank" class="mr-4 hover:underline md:mr-6">Nosso Instagram</a>
+            </li>
+        </ul>
+    </footer>
+    
 
 
     <script>
