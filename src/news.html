@@ -10,13 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
         rel="stylesheet">
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/9e75afd050.js" crossorigin="anonymous"></script>
     <title>Notícias</title>
 </head>
-<body class="font-[Poppins] bg-gradient-to-r from-[#C27FB1] to-[#1A7FBE] h-full" style="font-size: 16px;">
-    <header id="nav-bar" class="nav-bar bg-white">
-        <nav class="flex justify-between items-center w-[92%]  mx-auto">
+<body class="font-[Poppins] bg-gradient-to-r from-[#C27FB1] to-[#1A7FBE] md:pt-20 h-full" style="font-size: 16px;">
+    <header id="nav-bar" class="nav-bar bg-white md:fixed w-full md:top-0">
+        <nav class="flex justify-between items-center w-[92%] mx-auto">
             <div>
-                <a href="hero-section"><img class="w-32 cursor-pointer" src="/assets/img/logo-reprogramese/preferencial-horizontal.png" alt="Logo Reprograme-se"></a>
+                <a href="/src/index.html"><img class="w-32 cursor-pointer" src="/assets/img/logo-reprogramese/preferencial-horizontal.png" alt="Logo Reprograme-se"></a>
             </div>
             <div
                 class="nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
@@ -34,7 +35,7 @@
                         <a class="hover:text-gray-500" href="/src/index.html">Fale Conosco</a>
                     </li>
                     <li>
-                        <a class="hover:text-gray-500" href="/src/faq.html">Perguntas Frequentes</a>
+                        <a class="hover:text-gray-500" href="/src/faq.html">Dúvidas Frequentes</a>
                     </li>
                     <li>
                         <a class="hover:text-gray-500" href="/src/news.html">Notícias</a>
@@ -45,127 +46,248 @@
                 </ul>
             </div>
             <div class="flex items-center gap-6">
-                <button class="bg-[#a6c1ee] text-white px-5 py-2 my-2 rounded-full hover:bg-[#87acec]"><a target="_black" href="https://cachoeiro.ifes.edu.br/processosseletivos/alunos/16788-edital-25-2022-processo-de-selecao-de-estudantes-para-o-curso-do-projeto-reprograme-se">Inscreva-se</a></button>
+                <button class="bg-[#a6c1ee] text-white px-5 py-2 my-2 rounded-full hover:bg-[#87acec]"><a href="https://cachoeiro.ifes.edu.br/processosseletivos/alunos/16788-edital-25-2022-processo-de-selecao-de-estudantes-para-o-curso-do-projeto-reprograme-se">Inscreva-se</a></button>
                 <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
             </div>
     </header>
     <section class="container mx-auto mt-4">
+        <h1 class="py-10 text-4xl text-center font-bold tracking-tight leading-none dark:text-white">As principais notícias do mercado</h1>
         <div class="sm:grid sm:grid-cols-2 sm:gap-7">
-            <div class="flex flex-wrap -mx-4">
-                <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-4">
+            <div class="-mx-4">
+                <div class="w-full px-4 mb-4">
                     <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                        <img class="w-full h-48 object-cover" src="https://picsum.photos/id/237/400/300" alt="Imagem de exemplo">
+                        <img class="w-full h-48 object-cover" src="https://picsum.photos/id/240/400/300" alt="Imagem de exemplo">
                         <div class="px-6 py-4">
                             <div class="font-bold text-xl mb-2">Título da Notícia 1</div>
                             <p class="text-gray-700 text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut posuere diam eu velit accumsan ultrices. Proin ac odio a arcu consectetur lacinia non ac turpis. Praesent vel lorem tellus.</p>
                             <div class="mt-4 text-gray-600 text-sm">
-                                <i class="far fa-calendar-alt"></i> 01/03/2023
-                                <i class="far fa-clock ml-2"></i> 14h30
+                                <i class="fa-regular fa-calendar-days"></i> 01/03/2023
+                                <i class="fa-sharp fa-solid fa-clock"></i> 14h30
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="flex flex-wrap -mx-4">
-                <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-4">
+                <div class="w-full px-4 mb-4">
                     <div class="bg-white rounded-lg shadow-md overflow-hidden">
                         <img class="w-full h-48 object-cover" src="https://picsum.photos/id/237/400/300" alt="Imagem de exemplo">
                         <div class="px-6 py-4">
-                            <div class="font-bold text-xl mb-2">Título da Notícia 1</div>
+                            <div class="font-bold text-xl mb-2">Título da Notícia 2</div>
                             <p class="text-gray-700 text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut posuere diam eu velit accumsan ultrices. Proin ac odio a arcu consectetur lacinia non ac turpis. Praesent vel lorem tellus.</p>
                             <div class="mt-4 text-gray-600 text-sm">
-                                <i class="far fa-calendar-alt"></i> 01/03/2023
-                                <i class="far fa-clock ml-2"></i> 14h30
+                                <i class="fa-regular fa-calendar-days"></i> 01/03/2023
+                                <i class="fa-sharp fa-solid fa-clock"></i> 14h30
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="flex flex-wrap -mx-4">
-                <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-4">
+                <div class="w-full px-4 mb-4">
                     <div class="bg-white rounded-lg shadow-md overflow-hidden">
                         <img class="w-full h-48 object-cover" src="https://picsum.photos/id/239/400/300" alt="Imagem de exemplo">
                         <div class="px-6 py-4">
-                            <div class="font-bold text-xl mb-2">Título da Notícia 1</div>
+                            <div class="font-bold text-xl mb-2">Título da Notícia 3</div>
                             <p class="text-gray-700 text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut posuere diam eu velit accumsan ultrices. Proin ac odio a arcu consectetur lacinia non ac turpis. Praesent vel lorem tellus.</p>
                             <div class="mt-4 text-gray-600 text-sm">
-                                <i class="far fa-calendar-alt"></i> 01/03/2023
-                                <i class="far fa-clock ml-2"></i> 14h30
+                                <i class="fa-regular fa-calendar-days"></i> 01/03/2023
+                                <i class="fa-sharp fa-solid fa-clock"></i> 14h30
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="flex flex-wrap -mx-4">
-                <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-4">
+                <div class="w-full px-4 mb-4">
                     <div class="bg-white rounded-lg shadow-md overflow-hidden">
                         <img class="w-full h-48 object-cover" src="https://picsum.photos/id/238/400/300" alt="Imagem de exemplo">
                         <div class="px-6 py-4">
-                            <div class="font-bold text-xl mb-2">Título da Notícia 1</div>
+                            <div class="font-bold text-xl mb-2">Título da Notícia 4</div>
                             <p class="text-gray-700 text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut posuere diam eu velit accumsan ultrices. Proin ac odio a arcu consectetur lacinia non ac turpis. Praesent vel lorem tellus.</p>
                             <div class="mt-4 text-gray-600 text-sm">
-                                <i class="far fa-calendar-alt"></i> 01/03/2023
-                                <i class="far fa-clock ml-2"></i> 14h30
+                                <i class="fa-regular fa-calendar-days"></i> 01/03/2023
+                                <i class="fa-sharp fa-solid fa-clock"></i> 14h30
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="flex flex-wrap -mx-4">
-                <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-4">
+                <div class="w-full px-4 mb-4">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img class="w-full h-48 object-cover" src="https://picsum.photos/id/236/400/300" alt="Imagem de exemplo">
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl mb-2">Título da Notícia 5</div>
+                            <p class="text-gray-700 text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut posuere diam eu velit accumsan ultrices. Proin ac odio a arcu consectetur lacinia non ac turpis. Praesent vel lorem tellus.</p>
+                            <div class="mt-4 text-gray-600 text-sm">
+                                <i class="fa-regular fa-calendar-days"></i> 01/03/2023
+                                <i class="fa-sharp fa-solid fa-clock"></i> 14h30
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-wrap -mx-4">
+                <div class="w-full px-4 mb-4">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img class="w-full h-48 object-cover" src="https://picsum.photos/id/233/400/300" alt="Imagem de exemplo">
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl mb-2">Título da Notícia 6</div>
+                            <p class="text-gray-700 text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut posuere diam eu velit accumsan ultrices. Proin ac odio a arcu consectetur lacinia non ac turpis. Praesent vel lorem tellus.</p>
+                            <div class="mt-4 text-gray-600 text-sm">
+                                <i class="fa-regular fa-calendar-days"></i> 01/03/2023
+                                <i class="fa-sharp fa-solid fa-clock"></i> 14h30
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-wrap -mx-4">
+                <div class="w-full px-4 mb-4">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img class="w-full h-48 object-cover" src="https://picsum.photos/id/232/400/300" alt="Imagem de exemplo">
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl mb-2">Título da Notícia 7</div>
+                            <p class="text-gray-700 text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut posuere diam eu velit accumsan ultrices. Proin ac odio a arcu consectetur lacinia non ac turpis. Praesent vel lorem tellus.</p>
+                            <div class="mt-4 text-gray-600 text-sm">
+                                <i class="fa-regular fa-calendar-days"></i> 01/03/2023
+                                <i class="fa-sharp fa-solid fa-clock"></i> 14h30
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-wrap -mx-4">
+                <div class="w-full px-4 mb-4">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img class="w-full h-48 object-cover" src="https://picsum.photos/id/238/400/300" alt="Imagem de exemplo">
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl mb-2">Título da Notícia 8</div>
+                            <p class="text-gray-700 text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut posuere diam eu velit accumsan ultrices. Proin ac odio a arcu consectetur lacinia non ac turpis. Praesent vel lorem tellus.</p>
+                            <div class="mt-4 text-gray-600 text-sm">
+                                <i class="fa-regular fa-calendar-days"></i> 01/03/2023
+                                <i class="fa-sharp fa-solid fa-clock"></i> 14h30
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="-mx-4">
+                <div class="w-full px-4 mb-4">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img class="w-full h-48 object-cover" src="https://picsum.photos/id/240/400/300" alt="Imagem de exemplo">
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl mb-2">Título da Notícia 9</div>
+                            <p class="text-gray-700 text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut posuere diam eu velit accumsan ultrices. Proin ac odio a arcu consectetur lacinia non ac turpis. Praesent vel lorem tellus.</p>
+                            <div class="mt-4 text-gray-600 text-sm">
+                                <i class="fa-regular fa-calendar-days"></i> 01/03/2023
+                                <i class="fa-sharp fa-solid fa-clock"></i> 14h30
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-wrap -mx-4">
+                <div class="w-full px-4 mb-4">
                     <div class="bg-white rounded-lg shadow-md overflow-hidden">
                         <img class="w-full h-48 object-cover" src="https://picsum.photos/id/237/400/300" alt="Imagem de exemplo">
                         <div class="px-6 py-4">
-                            <div class="font-bold text-xl mb-2">Título da Notícia 1</div>
+                            <div class="font-bold text-xl mb-2">Título da Notícia 10</div>
                             <p class="text-gray-700 text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut posuere diam eu velit accumsan ultrices. Proin ac odio a arcu consectetur lacinia non ac turpis. Praesent vel lorem tellus.</p>
                             <div class="mt-4 text-gray-600 text-sm">
-                                <i class="far fa-calendar-alt"></i> 01/03/2023
-                                <i class="far fa-clock ml-2"></i> 14h30
+                                <i class="fa-regular fa-calendar-days"></i> 01/03/2023
+                                <i class="fa-sharp fa-solid fa-clock"></i> 14h30
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="flex flex-wrap -mx-4">
-                <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-4">
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                        <img class="w-full h-48 object-cover" src="https://picsum.photos/id/237/400/300" alt="Imagem de exemplo">
-                        <div class="px-6 py-4">
-                            <div class="font-bold text-xl mb-2">Título da Notícia 1</div>
-                            <p class="text-gray-700 text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut posuere diam eu velit accumsan ultrices. Proin ac odio a arcu consectetur lacinia non ac turpis. Praesent vel lorem tellus.</p>
-                            <div class="mt-4 text-gray-600 text-sm">
-                                <i class="far fa-calendar-alt"></i> 01/03/2023
-                                <i class="far fa-clock ml-2"></i> 14h30
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="flex flex-wrap -mx-4">
-                <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-4">
+                <div class="w-full px-4 mb-4">
                     <div class="bg-white rounded-lg shadow-md overflow-hidden">
                         <img class="w-full h-48 object-cover" src="https://picsum.photos/id/239/400/300" alt="Imagem de exemplo">
                         <div class="px-6 py-4">
-                            <div class="font-bold text-xl mb-2">Título da Notícia 1</div>
+                            <div class="font-bold text-xl mb-2">Título da Notícia 11</div>
                             <p class="text-gray-700 text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut posuere diam eu velit accumsan ultrices. Proin ac odio a arcu consectetur lacinia non ac turpis. Praesent vel lorem tellus.</p>
                             <div class="mt-4 text-gray-600 text-sm">
-                                <i class="far fa-calendar-alt"></i> 01/03/2023
-                                <i class="far fa-clock ml-2"></i> 14h30
+                                <i class="fa-regular fa-calendar-days"></i> 01/03/2023
+                                <i class="fa-sharp fa-solid fa-clock"></i> 14h30
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="flex flex-wrap -mx-4">
-                <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-4">
+                <div class="w-full px-4 mb-4">
                     <div class="bg-white rounded-lg shadow-md overflow-hidden">
                         <img class="w-full h-48 object-cover" src="https://picsum.photos/id/238/400/300" alt="Imagem de exemplo">
                         <div class="px-6 py-4">
-                            <div class="font-bold text-xl mb-2">Título da Notícia 1</div>
+                            <div class="font-bold text-xl mb-2">Título da Notícia 12</div>
                             <p class="text-gray-700 text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut posuere diam eu velit accumsan ultrices. Proin ac odio a arcu consectetur lacinia non ac turpis. Praesent vel lorem tellus.</p>
                             <div class="mt-4 text-gray-600 text-sm">
-                                <i class="far fa-calendar-alt"></i> 01/03/2023
-                                <i class="far fa-clock ml-2"></i> 14h30
+                                <i class="fa-regular fa-calendar-days"></i> 01/03/2023
+                                <i class="fa-sharp fa-solid fa-clock"></i> 14h30
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-wrap -mx-4">
+                <div class="w-full px-4 mb-4">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img class="w-full h-48 object-cover" src="https://picsum.photos/id/236/400/300" alt="Imagem de exemplo">
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl mb-2">Título da Notícia 13</div>
+                            <p class="text-gray-700 text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut posuere diam eu velit accumsan ultrices. Proin ac odio a arcu consectetur lacinia non ac turpis. Praesent vel lorem tellus.</p>
+                            <div class="mt-4 text-gray-600 text-sm">
+                                <i class="fa-regular fa-calendar-days"></i> 01/03/2023
+                                <i class="fa-sharp fa-solid fa-clock"></i> 14h30
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-wrap -mx-4">
+                <div class="w-full px-4 mb-4">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img class="w-full h-48 object-cover" src="https://picsum.photos/id/233/400/300" alt="Imagem de exemplo">
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl mb-2">Título da Notícia 14</div>
+                            <p class="text-gray-700 text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut posuere diam eu velit accumsan ultrices. Proin ac odio a arcu consectetur lacinia non ac turpis. Praesent vel lorem tellus.</p>
+                            <div class="mt-4 text-gray-600 text-sm">
+                                <i class="fa-regular fa-calendar-days"></i> 01/03/2023
+                                <i class="fa-sharp fa-solid fa-clock"></i> 14h30
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-wrap -mx-4">
+                <div class="w-full px-4 mb-4">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img class="w-full h-48 object-cover" src="https://picsum.photos/id/232/400/300" alt="Imagem de exemplo">
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl mb-2">Título da Notícia 15</div>
+                            <p class="text-gray-700 text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut posuere diam eu velit accumsan ultrices. Proin ac odio a arcu consectetur lacinia non ac turpis. Praesent vel lorem tellus.</p>
+                            <div class="mt-4 text-gray-600 text-sm">
+                                <i class="fa-regular fa-calendar-days"></i> 01/03/2023
+                                <i class="fa-sharp fa-solid fa-clock"></i> 14h30
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-wrap -mx-4">
+                <div class="w-full px-4 mb-4">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img class="w-full h-48 object-cover" src="https://picsum.photos/id/238/400/300" alt="Imagem de exemplo">
+                        <div class="px-6 py-4">
+                            <div class="font-bold text-xl mb-2">Título da Notícia 16</div>
+                            <p class="text-gray-700 text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut posuere diam eu velit accumsan ultrices. Proin ac odio a arcu consectetur lacinia non ac turpis. Praesent vel lorem tellus.</p>
+                            <div class="mt-4 text-gray-600 text-sm">
+                                <i class="fa-regular fa-calendar-days"></i> 01/03/2023
+                                <i class="fa-sharp fa-solid fa-clock"></i> 14h30
                             </div>
                         </div>
                     </div>
@@ -173,8 +295,15 @@
             </div>
         </div>
     </section>
-    <script src="https://kit.fontawesome.com/yourkit.js"></script>
-    
+    <div class="fixed bottom-0 right-0 mb-20 bg-gray-200 p-2 rounded-lg shadow-lg">
+        <div class="flex flex-col justify-end items-center space-y-4"> 
+          <button class="bg-white text-gray-800 px-4 py-2 rounded-md shadow-md hover:bg-gray-100 transition-all duration-200">A+</button>
+          <button class="bg-white text-gray-800 px-4 py-2 rounded-md shadow-md hover:bg-gray-100 transition-all duration-200">A-</button>
+          <button class="bg-white text-gray-800 px-4 py-2 rounded-md shadow-md hover:bg-gray-100 transition-all duration-200">A/C</button>
+        </div>
+    </div>
+    <!-- Não conseguimos implementar as funções dos botões. Foi a nossa maior dificuldade. -->
+
     <script>
         const navLinks = document.querySelector('.nav-links')
         function onToggleMenu(e){
